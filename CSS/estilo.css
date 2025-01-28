@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(10, 148, 148);
+}
+img{
+    width: 250px;
+    height: 500px;
+}
+#imagen1{
+    width: 500px;
+    height: 500px;
+    border-radius: 81px;
+}
+#botoncito{
+    color: red;
+    background-color: rgb(104, 104, 180);
+    font-family: Arial;
+    font-size: larger;
+    border-color: red;
+    border-radius: 10px;
+    cursor: all-scroll;
+
+}
+#botoncito:hover{
+    background-color: blueviolet;
+
+}
+#botoncito:active{
+    background-color: brown;
+
+}
+nav{
+    background-color: blueviolet;
+    color: black;
+    text-align: center;
+}
+li{
+    list-style:none;
+}
+nav ul li{
+    display:inline;
+    font-family:  Helvetica;
+    font-size: 25px;
+}
+a{
+    color: azure;
+    text-decoration: none; /*quita el subrayado*/
+}
+nav ul li a{
+    padding: 20px;
+}
+    
+    
