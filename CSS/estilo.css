@@ -1,37 +1,39 @@
 body{
-    background-color: rgb(10, 148, 148);
+    background-color: rgb(245, 141, 81);
 }
 img{
-    width: 250px;
+    width: 500px;
     height: 500px;
+    border-radius: 500px;
 }
 #imagen1{
     width: 500px;
     height: 500px;
-    border-radius: 81px;
+    border-radius: 500px;
 }
 #botoncito{
-    color: red;
+    color: rgb(0, 0, 0);
     background-color: rgb(104, 104, 180);
     font-family: Arial;
     font-size: larger;
-    border-color: red;
+    border-color: rgb(5, 4, 4);
     border-radius: 10px;
     cursor: all-scroll;
 
 }
 #botoncito:hover{
-    background-color: blueviolet;
+    background-color: rgb(195, 150, 238);
 
 }
 #botoncito:active{
-    background-color: brown;
+    background-color: rgb(12, 11, 11);
 
 }
 nav{
-    background-color: blueviolet;
+    background-color: rgb(141, 255, 185);
     color: black;
     text-align: center;
+    padding: 10px 0;
 }
 li{
     list-style:none;
@@ -46,7 +48,95 @@ a{
     text-decoration: none; /*quita el subrayado*/
 }
 nav ul li a{
-    padding: 20px;
+    padding: 5px;
 }
-    
-    
+nav ul li a:hover {
+    background-color: rgb(9, 122, 85);
+    color: aliceblue;
+}    
+
+/* estilos para el menu principal */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative; /*necesario para el submenu */
+}
+
+nav ul li a {
+    color:beige;
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 20px;
+    display: block;
+    background-color: black;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgb(48, 47, 46);
+}
+
+/* submenu - inializacion oculta */
+nav ul li.opcion-submenu .submenu {
+    display: none; /* submenu oculto por defecto */
+}
+
+nav ul li a:hover {
+    background-color: aqua;
+}
+
+/* submenu- inicializacion oculta */
+nav ul li.opcion-submenu .submenu {
+    display: none; /* submenu oculto por defecto */
+    position: absolute; /* posicionar el submenu justo*/
+    background-color: rgb(10, 10, 10); /*fondo oscuro*/
+    border-radius: 5px;
+}
+
+/* mostrar el submenu al pasar el cursor sobre el elemento */
+nav ul li.opcion-submenu:hover .submenu {
+    display: block; /*mostrar el submenu cuando se pasa el cursor */
+}
+
+/* estilos del submenu */
+nav ul li .submenu li {
+    margin: 0;
+}
+
+nav ul li .submenu li a {
+    font-size: 15px;
+    color: bisque;
+    display: block;
+}
+
+nav ul li .submenu li a:hover {
+    background-color: rgb(102, 101, 99);
+}
+section {
+    padding: 20px;
+    text-align: center;
+}
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.imagenes img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3 ease;
+}
+.imagenes img:hover {
+    transform: scale(1.5);
+}
