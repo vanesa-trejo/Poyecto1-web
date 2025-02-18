@@ -7,7 +7,8 @@ img{
     border-radius: 500px;
     display: block;
     margin: auto;
-    padding: 10px;
+    padding: 10
+    px;
 }
 #imagen1{
     width: 500px;
@@ -63,8 +64,8 @@ nav ul li a{
     padding: 5px;
 }
 nav ul li a:hover {
-    background-color: rgb(9, 122, 85);
-    color: aliceblue;
+    background-color: rgb(12, 12, 12);
+    color: rgb(8, 8, 8);
 }    
 
 /* estilos para el menu principal */
@@ -81,7 +82,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color:beige;
+    color:rgb(255, 255, 255);
     text-decoration: none;
     padding: 10px 10px;
     font-size: 20px;
@@ -92,7 +93,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgb(48, 47, 46);
+    background-color: rgb(2, 2, 2);
 }
 
 /* submenu - inializacion oculta */
@@ -124,12 +125,12 @@ nav ul li .submenu li {
 
 nav ul li .submenu li a {
     font-size: 15px;
-    color: bisque;
+    color: rgb(255, 255, 255);
     display: block;
 }
 
 nav ul li .submenu li a:hover {
-    background-color: rgb(102, 101, 99);
+    background-color: rgb(0, 0, 0);
 }
 section {
     padding: 20px;
